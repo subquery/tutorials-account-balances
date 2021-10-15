@@ -50,7 +50,7 @@ Open http://localhost:3000/ on your browser
 query {
    accounts(first:10 orderBy:BALANCE_DESC){
     nodes{
-			account
+      account
       balance
     }
   }
