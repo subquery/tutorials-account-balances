@@ -11,7 +11,7 @@ This subquery example indexes the deposit balance of each account and it is an e
 ### 1. Clone the entire subql-example repository
 
 ```shell
-git clone https://github.com/subquery/tutorials-account-balance.git
+git clone https://github.com/subquery/tutorials-account-balances.git
 
 ```
 
