@@ -19,9 +19,9 @@
   "author": "sa",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@polkadot/api": "^5.7.1",
+    "@polkadot/api": "latest",
     "@subql/types": "latest",
-    "typescript": "^4.1.3",
+    "typescript": "latest",
     "@subql/cli": "latest"
   }
 }
