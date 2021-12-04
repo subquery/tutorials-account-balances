@@ -63,6 +63,6 @@ This project has a function called handleEvent. It uses an [EventHandler](https:
 
 The [schema.graphql](https://doc.subquery.network/create/graphql.html) file defines the variables blockHeight which is mandatory and of type Int.
 
-If we examine the function handleEvebt in more detail, you can see that this function takes one argument of type SubstrateEvent. It then creates a new instance of Account passing in the event.extrinsic.block.block.header.hash argument as a string and assigning this to the variable record.
+If we examine the function handleEvent in more detail, you can see that this function takes one argument of type SubstrateEvent. It then creates a new instance of Account passing in the event.extrinsic.block.block.header.hash argument as a string and assigning this to the variable record.
 
 Next, the account is converted to a string via toString() and assigned to record.account. The balance is type cast as Balance and converted to a big integer.
