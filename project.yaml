@@ -1,15 +1,19 @@
-specVersion: 0.0.1
-description: ''
-repository: ''
-schema: ./schema.graphql
+specVersion: 0.2.0
+name: account-balance
+version: 1.0.0
+description: 'A tutorial for querying account balances on polkadot'
+repository: 'https://github.com/subquery/tutorials-account-balances'
+schema:
+  file: ./schema.graphql
 network:
-  endpoint: 'wss://polkadot.api.onfinality.io/public-ws'
-  dictionary: 'https://api.subquery.network/sq/subquery/dictionary-polkadot'
+  genesisHash: '0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3'
+  endpoint: wss://polkadot.api.onfinality.io/public-ws
+  dictionary: https://api.subquery.network/sq/subquery/dictionary-polkadot
 dataSources:
-  - name: main
-    kind: substrate/Runtime
+  - kind: substrate/Runtime
     startBlock: 1
     mapping:
+      file: ./dist/index.js
       handlers:
         - handler: handleEvent
           kind: substrate/EventHandler
