@@ -1,10 +1,10 @@
 {
   "name": "account-balance",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tutorial for querying account balances on polkadot",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -b",
+    "build": "./node_modules/.bin/subql build",
     "prepack": "rm -rf dist && npm build",
     "test": "jest",
     "codegen": "./node_modules/.bin/subql codegen"
@@ -19,7 +19,7 @@
   "author": "sa",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@polkadot/api": "^6",
+    "@polkadot/api": "^7",
     "@subql/types": "latest",
     "typescript": "4.4.4",
     "@subql/cli": "latest"
