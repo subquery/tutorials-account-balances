@@ -19,7 +19,7 @@ git clone https://github.com/subquery/tutorials-account-balances.git
 
 ```shell
 cd tutorials-account-balance
-yarn
+yarn install
 ```
 
 ### 3. Generate types
