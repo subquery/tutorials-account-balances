@@ -1,12 +1,19 @@
-specVersion: 0.2.0
+specVersion: 1.0.0
 name: account-balance
 version: 1.0.0
-description: 'A tutorial for querying account balances on polkadot'
-repository: 'https://github.com/subquery/tutorials-account-balances'
+runner:
+  node:
+    name: '@subql/node'
+    version: '*'
+  query:
+    name: '@subql/query'
+    version: '*'
+description: A tutorial for querying account balances on polkadot
+repository: https://github.com/subquery/tutorials-account-balances
 schema:
   file: ./schema.graphql
 network:
-  genesisHash: '0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3'
+  chainId: '0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3'
   endpoint: wss://polkadot.api.onfinality.io/public-ws
   dictionary: https://api.subquery.network/sq/subquery/polkadot-dictionary
 dataSources:
